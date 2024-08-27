@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  margin: 0;
+}
+
+.container .ql-editor {
+  /* We are using inches as scale to make the UI to look closer to a real paper.
+    */
+  width: 8.5in;
+  min-height: 11in;
+  padding: 1in;
+  margin: 1rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+::ng-deep .container .ql-container.snow {
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+::ng-deep .container .ql-toolbar.snow {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #F3F3F3;
+  border: none;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+}
