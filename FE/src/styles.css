@@ -20,19 +20,19 @@ body {
   background-color: white;
 }
 
-::ng-deep .container .ql-container.snow {
+#root .ql-container.ql-snow {
   border: none;
   display: flex;
   justify-content: center;
 }
 
-::ng-deep .container .ql-toolbar.snow {
+#root .ql-toolbar {
   display: flex;
   justify-content: center;
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   border: none;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "quill/dist/quill.snow.css";
 import Quill from "quill";
-import './styles.css';
+import "./styles.css";
 
 export const TextEditor = (): React.ReactElement => {
   const isQuillInitialized = useRef(false);
@@ -21,11 +21,5 @@ export const TextEditor = (): React.ReactElement => {
     };
   }, []);
 
-  return (
-    <div
-      id={TEXT_EDITOR_ID}
-      // style={{ border: 0, display: "flex", justifyContent: "center" }}
-      className="container"
-    ></div>
-  );
+  return <div id={TEXT_EDITOR_ID} className="container"></div>;
 };
